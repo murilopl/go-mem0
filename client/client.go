@@ -224,7 +224,7 @@ func (c *MemoryClient) preparePayload(messages []Message, options MemoryOptions)
 // prepareParams converts options to URL parameters
 func (c *MemoryClient) prepareParams(options interface{}) url.Values {
 	params := url.Values{}
-	
+
 	// Use reflection or type assertion to handle different option types
 	switch opts := options.(type) {
 	case MemoryOptions:
@@ -260,6 +260,6 @@ func (c *MemoryClient) prepareParams(options interface{}) url.Values {
 		}
 		// Add other search-specific parameters as needed
 	}
-	
+
 	return params
 }

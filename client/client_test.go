@@ -5,8 +5,6 @@ import (
 	"math/rand"
 	"os"
 	"testing"
-
-	"github.com/joho/godotenv"
 )
 
 var (
@@ -27,9 +25,6 @@ func randomString() string {
 
 // setupTestClient initializes the test client (equivalent to beforeAll)
 func setupTestClient(t *testing.T) {
-	// Load .env file from parent directory
-	_ = godotenv.Load("../.env")
-
 	apiKey := os.Getenv("MEM0_API_KEY")
 	if apiKey == "" {
 		t.Skip("MEM0_API_KEY environment variable not set")

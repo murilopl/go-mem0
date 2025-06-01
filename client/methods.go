@@ -366,7 +366,7 @@ func addSearchOptionsToPayload(payload map[string]interface{}, opts SearchOption
 	if opts.Filters != nil {
 		payload["filters"] = opts.Filters
 	}
-	
+
 	// Add search-specific options
 	if opts.Limit != nil {
 		payload["limit"] = *opts.Limit
@@ -575,7 +575,7 @@ func (c *MemoryClient) DeleteUsers(ctx context.Context, params ...DeleteUsersPar
 	c.validateOrgProject()
 
 	var toDelete []map[string]string
-	
+
 	// Use first params or empty params
 	deleteParams := DeleteUsersParams{}
 	if len(params) > 0 {
@@ -597,7 +597,7 @@ func (c *MemoryClient) DeleteUsers(ctx context.Context, params ...DeleteUsersPar
 		if err != nil {
 			return nil, err
 		}
-		
+
 		toDelete = make([]map[string]string, len(entities.Results))
 		for i, entity := range entities.Results {
 			toDelete[i] = map[string]string{
