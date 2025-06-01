@@ -1,5 +1,10 @@
 # Go Mem0 Client
 
+[![CI](https://github.com/murilopl/go-mem0/workflows/CI/badge.svg)](https://github.com/murilopl/go-mem0/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/murilopl/go-mem0)](https://goreportcard.com/report/github.com/murilopl/go-mem0)
+[![GoDoc](https://godoc.org/github.com/murilopl/go-mem0/client?status.svg)](https://godoc.org/github.com/murilopl/go-mem0/client)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A Go client library for the [Mem0](https://mem0.ai/) API - an intelligent memory layer for AI applications.
 
 **Note**: This client is designed for the Mem0 managed service and does not support self-hosted Mem0 instances.
